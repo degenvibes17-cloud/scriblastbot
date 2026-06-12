@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — ScriblastBot</title>
+    <meta name="description" content="ScriblastBot Privacy Policy. How we collect, use, and protect your data.">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.7;
+            color: #1a1a1a;
+            background: #fafaf7;
+            padding: 2rem 1rem;
+        }
+        .container { max-width: 720px; margin: 0 auto; }
+        h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        h2 { font-size: 1.3rem; margin-top: 2rem; margin-bottom: 0.5rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        p, ul { margin-bottom: 1rem; }
+        ul { padding-left: 1.5rem; }
+        li { margin-bottom: 0.3rem; }
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        th, td { padding: 0.5rem; text-align: left; border-bottom: 1px solid #eaeae5; font-size: 0.9rem; }
+        th { background: #f5f5f0; }
+        a { color: #0088cc; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ScriblastBot Privacy Policy</h1>
+        <p class="meta">Last updated: 2026-06-12 · Operator: Paul Duza · Contact: degenvibes17@gmail.com</p>
+
+        <h2>What data we collect</h2>
+        <p>ScriblastBot (a Telegram bot, @ScriblastBot) collects only what is needed to operate the service:</p>
+        <ol>
+            <li><strong>Telegram user_id</strong> — a numeric identifier Telegram assigns to your account. Used to track your paid tier, generation quota, and referral earnings.</li>
+            <li><strong>Article topics you send</strong> — used to generate articles. Held in volatile session memory only; not retained after the article is delivered, except when you explicitly save it.</li>
+            <li><strong>Telegram Stars payment metadata</strong> — Telegram's payment system handles billing. We see the <em>amount</em> and <em>tier purchased</em> but not your payment card or financial account.</li>
+            <li><strong>Brand profile</strong> (if you use /setup) — your business name, target audience, tone, and industry. Used to customize generated content.</li>
+            <li><strong>Custom repurpose formats</strong> (if you use /formats) — the three formats you set. Used to generate platform-specific reposts.</li>
+            <li><strong>Feedback and bug reports</strong> (if you send /feedback or /report) — stored for product improvement. Reports include your user_id; feedback is anonymous by default.</li>
+            <li><strong>Referral attribution</strong> — when you use <code>/ref &lt;code&gt;</code>, we record who referred you so we can pay lifetime commission to the referrer.</li>
+            <li><strong>Timestamps and usage counts</strong> — when you generated, paraphrased, or checked articles, used for quota enforcement and aggregate analytics.</li>
+        </ol>
+
+        <h2>What we do NOT collect</h2>
+        <ul>
+            <li>Your name (only Telegram's first_name, which we don't store)</li>
+            <li>Your phone number</li>
+            <li>Your payment card or financial info (Telegram handles this)</li>
+            <li>Your location</li>
+            <li>Your contacts</li>
+            <li>Your messages unrelated to the bot</li>
+        </ul>
+
+        <h2>How we use the data</h2>
+        <ul>
+            <li>To generate the articles, paraphrases, and plagiarism checks you request</li>
+            <li>To enforce your tier's article quota</li>
+            <li>To pay 5% lifetime commission to your referrer (no personal info shared, only Stars amount)</li>
+            <li>To send you the bot's responses in Telegram</li>
+            <li>To improve the product via aggregate, de-identified analytics</li>
+            <li>To comply with legal obligations</li>
+        </ul>
+
+        <p>We do <strong>not</strong> sell, rent, or share your data with third parties except:</p>
+        <ul>
+            <li><strong>OpenAI / DeepSeek / Anthropic / MiniMax:</strong> article content is sent to the LLM provider for generation. The LLM provider's own privacy policy applies to that processing.</li>
+            <li><strong>Pinterest:</strong> if you explicitly use the <code>/pinterest</code> command, the generated article and a public image URL are sent to Pinterest's API for pin creation.</li>
+            <li><strong>Telegram:</strong> message delivery is handled by Telegram's own infrastructure.</li>
+            <li><strong>Law enforcement:</strong> if compelled by valid legal process, we will comply.</li>
+        </ul>
+
+        <h2>Your rights</h2>
+        <p>You can at any time:</p>
+        <ul>
+            <li><strong>Delete all your data:</strong> send <code>/delete_my_data</code> to the bot. All your brand profile, formats, batch credits, feedback entries, mode preferences, and language setting will be erased within 24 hours.</li>
+            <li><strong>Export your data:</strong> send <code>/export_my_data</code> to receive a JSON file with everything we have on you. (For now, email degenvibes17@gmail.com and we'll send within 7 days.)</li>
+            <li><strong>Opt out of analytics:</strong> your data is not used for analytics unless you send feedback or report a bug.</li>
+            <li><strong>Close your account:</strong> same as delete_my_data.</li>
+        </ul>
+
+        <h2>Data retention</h2>
+        <table>
+            <tr><th>Data type</th><th>Retention</th></tr>
+            <tr><td>Telegram user_id</td><td>Until you delete or stop using the bot for 24 months</td></tr>
+            <tr><td>Article topics</td><td>Discarded after the article is delivered; not stored</td></tr>
+            <tr><td>Brand profile</td><td>Until you delete via /delete_my_data</td></tr>
+            <tr><td>Feedback / reports</td><td>Until you delete via /delete_my_data</td></tr>
+            <tr><td>Payment metadata</td><td>Telegram retains per its own policy; we retain only "tier + amount + date" for 7 years (tax compliance)</td></tr>
+            <tr><td>Referral attribution</td><td>Until either party deletes their account</td></tr>
+        </table>
+
+        <h2>Children</h2>
+        <p>ScriblastBot is not directed at children under 13. We do not knowingly collect data from children. If you believe a child has used the bot, contact degenvibes17@gmail.com and we will delete their data.</p>
+
+        <h2>International users (GDPR / CCPA / LGPD)</h2>
+        <ul>
+            <li><strong>GDPR (EU users):</strong> lawful basis for processing is contract performance (you asked us to generate content) and legitimate interest (operating the bot). You have the right to access, rectify, erase, restrict, port, and object. Contact degenvibes17@gmail.com.</li>
+            <li><strong>CCPA (California users):</strong> we do not sell personal information. You have the right to know, delete, and opt out of any "sale" (which we don't do).</li>
+            <li><strong>LGPD (Brazil users):</strong> same GDPR-equivalent rights apply.</li>
+        </ul>
+
+        <h2>Security</h2>
+        <p>We take reasonable measures to protect your data:</p>
+        <ul>
+            <li>Bot runs on Hetzner Cloud (encrypted at-rest, encrypted backups)</li>
+            <li>API keys stored in encrypted vault files (chmod 600)</li>
+            <li>No third-party tracking, no analytics services</li>
+            <li>Article content transmitted over TLS to LLM providers</li>
+        </ul>
+        <p>We do not warrant perfect security. If a breach occurs, we will notify affected users within 72 hours via Telegram DM.</p>
+
+        <h2>Changes to this policy</h2>
+        <p>If we change this policy materially, we will:</p>
+        <ol>
+            <li>Update the "Last updated" date above</li>
+            <li>Post a notice in the bot's /help</li>
+            <li>For major changes, notify active users via Telegram DM</li>
+        </ol>
+        <p>Continued use after a change means acceptance.</p>
+
+        <h2>Contact</h2>
+        <ul>
+            <li><strong>Email:</strong> degenvibes17@gmail.com</li>
+            <li><strong>Telegram:</strong> @Duxxaa</li>
+            <li><strong>Response time:</strong> within 7 days</li>
+        </ul>
+
+        <h2>Jurisdiction</h2>
+        <p>This policy is governed by the laws of the operator's residence. Disputes will be resolved in the operator's local courts.</p>
+
+        <hr style="margin: 2rem 0;">
+        <p><em>ScriblastBot is operated by Paul Duza as a solo project. It is not a registered business entity at this time.</em></p>
+    </div>
+</body>
+</html>
