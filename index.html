@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScriblastBot — AI Writing Assistant for Telegram</title>
+    <meta name="description" content="ScriblastBot is an AI-powered content writer for Telegram. Generate articles, paraphrase, check originality, and repurpose to 7 platforms. 5 generation modes, 4 paraphrase modes, pay with Telegram Stars.">
+    <meta property="og:title" content="ScriblastBot — AI Writing Assistant for Telegram">
+    <meta property="og:description" content="Generate, paraphrase, check, repurpose. From free to Premium, all in Telegram.">
+    <meta property="og:type" content="website">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #fafaf7;
+            padding: 2rem 1rem;
+        }
+        .container { max-width: 720px; margin: 0 auto; }
+        header { text-align: center; padding: 3rem 0; }
+        h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem; }
+        .tagline { font-size: 1.2rem; color: #666; }
+        .cta {
+            display: inline-block;
+            background: #0088cc;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1.5rem;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+        .feature {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .feature h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+        .feature p { color: #555; font-size: 0.95rem; }
+        .tiers {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .tier {
+            background: white;
+            padding: 1.25rem;
+            border-radius: 10px;
+            border: 1px solid #eaeae5;
+            text-align: center;
+        }
+        .tier.featured { border-color: #0088cc; border-width: 2px; }
+        .tier h4 { font-size: 1rem; }
+        .tier .price { font-size: 1.3rem; font-weight: 700; margin: 0.5rem 0; }
+        .tier ul { list-style: none; font-size: 0.85rem; color: #555; text-align: left; margin-top: 0.75rem; }
+        .tier li { padding: 0.25rem 0; }
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #eaeae5;
+            color: #888;
+            font-size: 0.9rem;
+        }
+        footer a { color: #0088cc; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📝 ScriblastBot</h1>
+            <p class="tagline">AI writing assistant for Telegram</p>
+            <a class="cta" href="https://t.me/ScriblastBot" target="_blank">Try on Telegram</a>
+        </header>
+
+        <section>
+            <div class="features">
+                <div class="feature">
+                    <h3>✍️ 5 Generation Modes</h3>
+                    <p>Article, Blog, Story, Email, and Copy (AIDA / PAS / BAB frameworks). From quick posts to long-form storytelling.</p>
+                </div>
+                <div class="feature">
+                    <h3>🔁 4 Paraphrase Modes</h3>
+                    <p>Standard, Formal, Casual, Punchy. Rewrite any text in your preferred voice — and check originality with LLM-as-judge.</p>
+                </div>
+                <div class="feature">
+                    <h3>📱 7-Platform Repurposing</h3>
+                    <p>One article becomes a tweet, LinkedIn post, Telegram update, Facebook post, Threads post, and Instagram caption. All SEO-tuned per platform.</p>
+                </div>
+                <div class="feature">
+                    <h3>⭐ Pay with Telegram Stars</h3>
+                    <p>No credit cards, no subscriptions, no friction. Buy once, use for the lifetime of your tier.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 style="text-align:center; margin: 2rem 0 1rem;">Pricing</h2>
+            <div class="tiers">
+                <div class="tier">
+                    <h4>Free</h4>
+                    <p class="price">$0</p>
+                    <ul>
+                        <li>1 article / day</li>
+                        <li>1 paraphrase / week</li>
+                        <li>1 plagiarism check / week</li>
+                    </ul>
+                </div>
+                <div class="tier">
+                    <h4>Standard</h4>
+                    <p class="price">199⭐</p>
+                    <ul>
+                        <li>30 articles / 30d</li>
+                        <li>30 paraphrases</li>
+                        <li>30 plagiarism checks</li>
+                        <li>All 4 generation modes</li>
+                    </ul>
+                </div>
+                <div class="tier featured">
+                    <h4>Custom</h4>
+                    <p class="price">499⭐</p>
+                    <ul>
+                        <li><strong>75 articles, never expires</strong></li>
+                        <li>Unlimited paraphrases</li>
+                        <li>Unlimited checks</li>
+                        <li>/setup brand profile</li>
+                        <li>/repurpose, /formats</li>
+                    </ul>
+                </div>
+                <div class="tier">
+                    <h4>Annual</h4>
+                    <p class="price">4,999⭐</p>
+                    <ul>
+                        <li>100 articles / month</li>
+                        <li>For 12 months</li>
+                        <li>All 3 Copy frameworks</li>
+                    </ul>
+                </div>
+                <div class="tier">
+                    <h4>Premium</h4>
+                    <p class="price">9,999⭐</p>
+                    <ul>
+                        <li>500 articles / month</li>
+                        <li>For 12 months</li>
+                        <li>Premium positioning</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 style="text-align:center; margin: 2.5rem 0 1rem;">Earn While You Share</h2>
+            <p style="text-align:center; color: #555;">5% lifetime commission on every paid referral. Refer 5 friends and unlock bonus paraphrase + check features. Refer 10 and unlock unlimited everything.</p>
+        </section>
+
+        <footer>
+            <p>Operated by Paul Duza · <a href="https://t.me/Duxxaa">@Duxxaa</a></p>
+            <p><a href="./privacy-policy.html">Privacy Policy</a> · <a href="mailto:degenvibes17@gmail.com">Contact</a></p>
+        </footer>
+    </div>
+</body>
+</html>
